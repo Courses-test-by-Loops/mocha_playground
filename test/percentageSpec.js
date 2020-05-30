@@ -11,5 +11,8 @@ describe('Percentage', () => {
     it('should handle 0 evolution', () => {
       assert.equal(Percentage.evolution(0, 100), Infinity);
     });
+    it('should round values', () => {
+      assert.equal(Percentage.evolution(30, 100), 233.33);
+    });
   });
 });
