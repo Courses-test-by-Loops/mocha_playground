@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Percentage = require('./demoFiles/Percentage');
+const Percentage = require('../lib/Percentage');
 
 describe('Percentage', () => {
   describe('#evaluation', () => {
