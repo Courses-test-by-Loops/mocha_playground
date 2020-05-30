@@ -40,6 +40,7 @@
   },
   "scripts": {
     "prod": "node_modules/.bin/webpack --config webpack.prod.js",
-    "dev": "node_modules/.bin/webpack-dev-server --config webpack.dev.js"
+    "dev": "node_modules/.bin/webpack-dev-server --config webpack.dev.js",
+    "test": "mocha -R nyan"
   }
 }

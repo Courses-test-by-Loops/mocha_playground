@@ -15,4 +15,15 @@ describe('Percentage', () => {
       assert.equal(Percentage.evolution(30, 100), 233.33);
     });
   });
+  describe('#wait', () => {
+    it('should exit', () => {
+      assert.notEqual(Percentage.wait, undefined);
+    });
+    it('should wait', (done) => {
+      Percentage.wait(300, (test) => {
+        assert.equal(test, 18);
+        done();
+      });
+    });
+  });
 });
