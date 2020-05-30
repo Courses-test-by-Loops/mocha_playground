@@ -8,5 +8,8 @@ describe('Percentage', () => {
       assert.equal(Percentage.evolution(100, 150), 50);
       assert.equal(Percentage.evolution(100, 50), -50);
     });
+    it('should handle 0 evolution', () => {
+      assert.equal(Percentage.evolution(0, 100), Infinity);
+    });
   });
 });
